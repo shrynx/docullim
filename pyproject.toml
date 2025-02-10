@@ -1,0 +1,23 @@
+[project]
+authors = [
+  {name = "shrynx", email = "shriyansbhatnagar@gmail.com"},
+]
+dependencies = ["litellm (>=1.60.8,<2.0.0)", "libcst (>=1.6.0,<2.0.0)"]
+description = "auto-generate documentation for python code using llms"
+keywords = ["documentation", "llm", "openai", "generative-ai"]
+license = {text = "MIT"}
+name = "docullim"
+readme = "README.md"
+requires-python = ">=3.10,<4.0"
+version = "0.5.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+ruff = "^0.9.5"
+
+[tool.poetry.scripts]
+docullim = "docullim.cli:main"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=2.0.0,<3.0.0"]
