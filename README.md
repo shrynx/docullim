@@ -56,7 +56,7 @@ config file is a json file that can have `model` as string, `max_concurrency` as
 }
 ```
 
-you should provide your llm api key provided as enviroment variable by default it requires `OPENAI_API_KEY`.
+you should provide your llm api key provided as environment variable by default it requires `OPENAI_API_KEY`.
 you can switch models and provide other llm api keys. See [supported llms](https://docs.litellm.ai/docs/providers)
 
 ## 🛠️ development
